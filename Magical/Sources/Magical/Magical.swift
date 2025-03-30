@@ -1,21 +1,18 @@
-//
-//  SwitchAppIconScreen.swift
-//  Explore-SwiftUI
-//
-//  Created by Ray on 2025/3/9.
-//
+// The Swift Programming Language
+// https://docs.swift.org/swift-book
 
 import SwiftUI
-import Magical
 
 // // Reference = https://youtu.be/TU6tYZei0EQ?si=AaosqX6D0eLxQ5m0
-struct SwitchAppIconScreen: View {
+public struct SwitchAppIconScreenX: View {
   
   @State private var currentIcon: AppIcon = .appicon
   
-  var body: some View {
+  public init() {}
+  
+  public var body: some View {
     List {
-      Section("Chooess App Icon") {
+      Section("Chooess App Icon from X") {
         ForEach(AppIcon.allCases, id: \.rawValue) { icon in
           HStack {
             Image(icon.previewImage)
@@ -81,7 +78,6 @@ private enum AppIcon: String, CaseIterable {
 
 #Preview {
   NavigationStack {
-    //SwitchAppIconScreen()
     SwitchAppIconScreenX()
   }
 }
