@@ -7,22 +7,20 @@ let package = Package(
   name: "Feature",
   platforms: [.iOS(.v17)],
   products: [
-    // Products define the executables and libraries a package produces, making them visible to other packages.
     .library(
       name: "Feature",
       targets: ["Feature"]),
   ],
   dependencies: [
     // ① 引用其他Swift package
-    .package(name: "Magical", path: "Magical"),
+    .package(name: "ComponentBox", path: "ComponentBox"),
   ],
   targets: [
-    // Targets are the basic building blocks of a package, defining a module or a test suite.
-    // Targets can depend on other targets in this package and products from dependencies.
     .target(
       name: "Feature",
       // ② 需要在這地方聲明，才能進行引用
-      dependencies: [.product(name: "Magical", package: "Magical")]
+      dependencies: [.product(name: "ComponentBox", package: "ComponentBox")],
+      resources: [.process("Resources")]
     ),
     .testTarget(
       name: "FeatureTests",

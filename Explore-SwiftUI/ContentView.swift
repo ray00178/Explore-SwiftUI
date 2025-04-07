@@ -6,16 +6,21 @@
 //
 
 import SwiftUI
+import ComponentBox
 
 struct ContentView: View {
+  
   var body: some View {
-    VStack {
-      Image(systemName: "globe")
-        .imageScale(.large)
-        .foregroundStyle(.tint)
-      Text("Hello, world!")
+    ShadowCard {
+      VStack {
+        Image(systemName: "globe")
+          .imageScale(.large)
+          .foregroundStyle(.tint)
+        Text("Hello, world!")
+      }
+      .padding()
     }
-    .padding()
+    .frame(width: 260, height: 200)
   }
 }
 

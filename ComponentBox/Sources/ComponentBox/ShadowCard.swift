@@ -1,8 +1,8 @@
 //
-//  ShadowCard.swift
-//  Magical
+//  SwiftUIView.swift
+//  ComponentBox
 //
-//  Created by Ray on 2025/3/30.
+//  Created by Ray on 2025/4/7.
 //
 
 import SwiftUI
@@ -37,3 +37,4 @@ public struct ShadowCard<Content: View>: View {
   }
   .frame(width: 200, height: 200)
 }
+

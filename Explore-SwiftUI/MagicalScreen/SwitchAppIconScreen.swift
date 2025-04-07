@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Magical
 
 // // Reference = https://youtu.be/TU6tYZei0EQ?si=AaosqX6D0eLxQ5m0
 struct SwitchAppIconScreen: View {
@@ -81,7 +80,6 @@ private enum AppIcon: String, CaseIterable {
 
 #Preview {
   NavigationStack {
-    //SwitchAppIconScreen()
-    SwitchAppIconScreenX()
+    SwitchAppIconScreen()
   }
 }

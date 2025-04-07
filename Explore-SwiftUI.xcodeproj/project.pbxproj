@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		710988492D81DDFE0064CEC5 /* Magical in Frameworks */ = {isa = PBXBuildFile; productRef = 710988482D81DDFE0064CEC5 /* Magical */; };
 		710988512D8FB7640064CEC5 /* Feature in Frameworks */ = {isa = PBXBuildFile; productRef = 710988502D8FB7640064CEC5 /* Feature */; };
+		710DFAF22DA4156900202A16 /* ComponentBox in Frameworks */ = {isa = PBXBuildFile; productRef = 710DFAF12DA4156900202A16 /* ComponentBox */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,9 +23,9 @@
 
 /* Begin PBXFileReference section */
 		710987FA2D7C3DBB0064CEC5 /* Explore-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Explore-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		710988392D81DBDE0064CEC5 /* Magical */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Magical; sourceTree = "<group>"; };
 		7109883E2D81DD9A0064CEC5 /* Explore-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Explore-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7109884F2D8FB74F0064CEC5 /* Feature */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Feature; sourceTree = "<group>"; };
+		710DFAF02DA4156000202A16 /* ComponentBox */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ComponentBox; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				710988492D81DDFE0064CEC5 /* Magical in Frameworks */,
+				710DFAF22DA4156900202A16 /* ComponentBox in Frameworks */,
 				710988512D8FB7640064CEC5 /* Feature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,8 +77,8 @@
 		710987F12D7C3DBB0064CEC5 = {
 			isa = PBXGroup;
 			children = (
+				710DFAF02DA4156000202A16 /* ComponentBox */,
 				7109884F2D8FB74F0064CEC5 /* Feature */,
-				710988392D81DBDE0064CEC5 /* Magical */,
 				710987FC2D7C3DBB0064CEC5 /* Explore-SwiftUI */,
 				7109883F2D81DD9A0064CEC5 /* Explore-SwiftUITests */,
 				710988472D81DDFE0064CEC5 /* Frameworks */,
@@ -122,8 +122,8 @@
 			);
 			name = "Explore-SwiftUI";
 			packageProductDependencies = (
-				710988482D81DDFE0064CEC5 /* Magical */,
 				710988502D8FB7640064CEC5 /* Feature */,
+				710DFAF12DA4156900202A16 /* ComponentBox */,
 			);
 			productName = "Explore-SwiftUI";
 			productReference = 710987FA2D7C3DBB0064CEC5 /* Explore-SwiftUI.app */;
@@ -484,13 +484,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		710988482D81DDFE0064CEC5 /* Magical */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Magical;
-		};
 		710988502D8FB7640064CEC5 /* Feature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Feature;
+		};
+		710DFAF12DA4156900202A16 /* ComponentBox */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ComponentBox;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
