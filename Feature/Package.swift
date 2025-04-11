@@ -20,6 +20,7 @@ let package = Package(
       name: "Feature",
       // ② 需要在這地方聲明，才能進行引用
       dependencies: [.product(name: "ComponentBox", package: "ComponentBox")],
+      // 引用資源檔
       resources: [.process("Resources")]
     ),
     .testTarget(

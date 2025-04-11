@@ -8,7 +8,7 @@ struct RamdomView: View {
   
   var body: some View {
     
-    ShadowCard {
+    ShadowCard(corner: 40) {
       HStack {
         Text("Bro 🥺")
         Image("ic_snowflake", bundle: .module)

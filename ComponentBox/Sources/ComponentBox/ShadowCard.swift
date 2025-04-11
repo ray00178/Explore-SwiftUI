@@ -6,18 +6,21 @@
 //
 
 import SwiftUI
+import UIKit
 
-public struct ShadowCard<Content: View>: View {
+public struct ShadowCard<Content>: View where Content: View {
   
-  var content: Content
+  public var corner: CGFloat = 0
+  public var content: Content
   
-  public init(@ViewBuilder content: () -> Content) {
+  public init(corner: CGFloat = 26.0, @ViewBuilder content: () -> Content) {
+    self.corner = corner
     self.content = content()
   }
   
   public var body: some View {
     ZStack(alignment: .center) {
-      RoundedRectangle(cornerRadius: 20)
+      RoundedRectangle(cornerRadius: corner)
         .fill(.white)
         .shadow(color: Color.black.opacity(0.06), radius: 0, x: 0, y: 0)
         .shadow(color: Color.black.opacity(0.06), radius: 1, x: 0, y: 1)
