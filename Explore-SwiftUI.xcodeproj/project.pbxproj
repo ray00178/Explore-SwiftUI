@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		710988512D8FB7640064CEC5 /* Feature in Frameworks */ = {isa = PBXBuildFile; productRef = 710988502D8FB7640064CEC5 /* Feature */; };
 		710DFAF22DA4156900202A16 /* ComponentBox in Frameworks */ = {isa = PBXBuildFile; productRef = 710DFAF12DA4156900202A16 /* ComponentBox */; };
+		711E22CB2DBC833500970A2A /* Tagged in Frameworks */ = {isa = PBXBuildFile; productRef = 711E22CA2DBC833500970A2A /* Tagged */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				711E22CB2DBC833500970A2A /* Tagged in Frameworks */,
 				710DFAF22DA4156900202A16 /* ComponentBox in Frameworks */,
 				710988512D8FB7640064CEC5 /* Feature in Frameworks */,
 			);
@@ -124,6 +126,7 @@
 			packageProductDependencies = (
 				710988502D8FB7640064CEC5 /* Feature */,
 				710DFAF12DA4156900202A16 /* ComponentBox */,
+				711E22CA2DBC833500970A2A /* Tagged */,
 			);
 			productName = "Explore-SwiftUI";
 			productReference = 710987FA2D7C3DBB0064CEC5 /* Explore-SwiftUI.app */;
@@ -180,6 +183,9 @@
 			);
 			mainGroup = 710987F12D7C3DBB0064CEC5;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				711E22C92DBC833500970A2A /* XCRemoteSwiftPackageReference "swift-tagged" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 710987FB2D7C3DBB0064CEC5 /* Products */;
 			projectDirPath = "";
@@ -483,6 +489,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		711E22C92DBC833500970A2A /* XCRemoteSwiftPackageReference "swift-tagged" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-tagged";
+			requirement = {
+				kind = exactVersion;
+				version = 0.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		710988502D8FB7640064CEC5 /* Feature */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -491,6 +508,11 @@
 		710DFAF12DA4156900202A16 /* ComponentBox */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ComponentBox;
+		};
+		711E22CA2DBC833500970A2A /* Tagged */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 711E22C92DBC833500970A2A /* XCRemoteSwiftPackageReference "swift-tagged" */;
+			productName = Tagged;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
