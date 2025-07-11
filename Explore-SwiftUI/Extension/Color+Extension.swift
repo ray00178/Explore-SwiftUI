@@ -9,13 +9,13 @@ import UIKit
 
 extension UIColor {
   
-  private static var hexColorCache: [String: CGColor] = [:]
+  @MainActor private static var hexColorCache: [String: CGColor] = [:]
   
   /// - [緩存顏色](Documentation/Resources/HexColorCache.jpg)
   /// - Parameters:
   ///   - hex: 色碼
   ///   - alpha: 透明度
-  convenience init?(hex: String, alpha: CGFloat = 1.0) {
+  @MainActor convenience init?(hex: String, alpha: CGFloat = 1.0) {
     let cleanedHex = hex.trimmingCharacters(
       in: CharacterSet.alphanumerics.inverted
     )
